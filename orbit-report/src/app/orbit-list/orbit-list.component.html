@@ -1,5 +1,6 @@
 <div class="orbit-list">
     <h3>Orbit Report</h3>
+    
     <table>
         <tr class="header-row">
             <th class="sortable" (click)= "sort('name')">Name</th>
@@ -10,7 +11,7 @@
         </tr>
 
         <!-- TODO: put <tr *ngFor=""></tr> here -->
-        <tr *ngFor = 'let satellite of satellites'>
+        <tr *ngFor = 'let satellite of satellites; let i = index' [class.zebraStripe]="i % 2 === 0">
             <td [class.warning]="satellite.shouldShowWarning()">{{satellite.name}}</td>
             <td [class.warning]="satellite.shouldShowWarning()">{{satellite.type}}</td>
             <td [class.warning]="satellite.shouldShowWarning()">{{satellite.operational}}</td>

@@ -15,7 +15,9 @@ table {
     min-width: 300px;
     background: #dad8d8;
 }
-
+.zebraStripe {
+    background-color: lime;
+}
 .header-row {
     background: #34495E;
     color: #fff
