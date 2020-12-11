@@ -1,4 +1,4 @@
-import { Satellite } from './satellite';
+import { Satellite } from './satellite'
 
 /*
 describe('Satellite', () => {
